@@ -150,7 +150,7 @@ main {
 
 .cta-button:hover {
   background-color: #35617d; /* hover color */
-  box-shadow: 0 2px 4px black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -190,15 +190,6 @@ footer p {
     justify-content: center;
     gap: 1rem;
   }
-
-  .content-section h2,
-  .card-section h2,
-  .cta-section h2 {
-    font-size: 1.6rem;
-  } 
-
-  .cta-section {
-    padding: 1.5rem;
-  } */
+ */
 
 }
