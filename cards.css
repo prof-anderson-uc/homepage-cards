@@ -1,0 +1,204 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #dddddd;
+}
+
+
+/* HEADER STYLES
+   ========================= */
+header {
+  background-color: #eaf1f8;
+  border-bottom: 1px solid #dddddd;
+  padding: 1rem 2rem; /* space inside the header */
+  display: flex; /* puts name and nav side by side */
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem; /* space between flex items */
+}
+
+header h1 {
+  font-size: 150%;
+  font-weight: bold;
+  color: #1d3557;
+}
+
+nav ul {
+  list-style: none; /* removes bullet points */
+  display: flex; /* puts list items in a row */
+  gap: 1.5rem; /* space between links */
+}
+
+nav a {
+  text-decoration: none; /* removes underlines */
+  color: #1d3557;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #4a84a8; /* color when hovering */
+}
+
+
+/* MAIN CONTENT AREA
+   ========================= */
+main {
+  background-color: white;
+  line-height: 1.4; /* space between lines of text */
+  padding: 1rem 2rem;
+  max-width: 1024px; /* limits width */
+  margin: 0 auto; /* centers horizontally */
+}
+
+
+/* INTRO SECTION
+   ========================= */
+.intro-section {
+  padding-bottom: 2rem;
+  font-size: 1.25rem;
+}
+
+.intro-section h2 {
+  font-size: 2rem;
+  color: #1d3557;
+  border-bottom: 1px solid silver;
+  margin-bottom: 0.75rem;
+}
+
+.intro-section p {
+  margin-bottom: 1rem;
+}
+
+
+/* FEATURE CARDS SECTION
+   ========================= */
+/* CSS Grid places the cards into columns */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.card {
+  background-color: #f8fafc;
+  border: 1px solid #dbe4ee;
+  border-radius: 1rem;
+  padding: 1.25rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+
+  /* keeps the cards consistent in height */
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.card-icon {
+  font-size: 1.6rem; /* size of icons */
+  line-height: 1; 
+}
+
+.card h3 {
+  font-size: 1.25rem; 
+  color: #1d3557;
+  margin: 0;
+}
+
+.card p {
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+
+
+/* CALL TO ACTION SECTION
+   ========================= */
+.cta-section {
+  margin: 2rem 0;
+  padding: 2rem;
+  background-color: #eaf1f8;
+  color: #1d3557;
+  text-align: center;
+  border: 1px solid #d6e0ea;
+  border-radius: 1rem;
+}
+
+.cta-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.cta-section p {
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.cta-button {
+  display: inline-block;
+  background-color: #457b9d;
+  color: #ffffff;
+  text-decoration: none; /* removes link underline */
+  font-weight: bold;
+  padding: 0.9rem 1.4rem; /* space inside button */
+  border-radius: 0.75rem; /* rounds corners */
+  border: 1px solid silver;
+}
+
+.cta-button:hover {
+  background-color: #35617d; /* hover color */
+  box-shadow: 0 2px 4px black;
+}
+
+
+
+/* FOOTER
+   ========================= */
+
+footer {
+  font-size: 80%;
+  background-color: #1d3557;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+
+/* RESPONSIVE MEDIA QUERIES
+   ========================= */
+
+@media (max-width: 480px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .content-section h2,
+  .card-section h2,
+  .cta-section h2 {
+    font-size: 1.6rem;
+  } 
+
+  .cta-section {
+    padding: 1.5rem;
+  } */
+
+}
